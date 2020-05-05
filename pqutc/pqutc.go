@@ -7,6 +7,7 @@ import (
 	"github.com/lib/pq"
 )
 
+// nolint: gochecknoinits
 func init() {
 	sql.Register("pqutc", utcer.Wrap(&pq.Driver{}))
 }
