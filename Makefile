@@ -14,7 +14,7 @@ lint: ## Run GolangCI-Lint
 	golangci-lint run
 
 test: ## Run tests
-	go test ./...
+	go test -race -coverprofile=coverage.txt -covermode=atomic ./...
 	for d in $(SUBMODULES); do cd "$$d"; go test ./... || exit 1; cd ..; done
 
 up: ## Start containers
