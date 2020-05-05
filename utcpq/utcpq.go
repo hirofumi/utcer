@@ -1,4 +1,4 @@
-package pqutc
+package utcpq
 
 import (
 	"database/sql"
@@ -9,5 +9,5 @@ import (
 
 // nolint: gochecknoinits
 func init() {
-	sql.Register("pqutc", utcer.Wrap(&pq.Driver{}))
+	sql.Register("utcpq", utcer.Wrap(&pq.Driver{}))
 }

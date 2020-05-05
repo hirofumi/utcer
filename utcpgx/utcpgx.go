@@ -1,4 +1,4 @@
-package pgxutc
+package utcpgx
 
 import (
 	"database/sql"
@@ -9,5 +9,5 @@ import (
 
 // nolint: gochecknoinits
 func init() {
-	sql.Register("pgxutc", utcer.Wrap(stdlib.GetDefaultDriver()))
+	sql.Register("utcpgx", utcer.Wrap(stdlib.GetDefaultDriver()))
 }
