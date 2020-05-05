@@ -7,4 +7,5 @@ require (
 	github.com/jackc/pgx/v4 v4.6.0
 	github.com/lib/pq v1.5.1
 	github.com/stretchr/testify v1.5.1
+	golang.org/x/tools v0.0.0-20200505023115-26f46d2f7ef8 // indirect
 )

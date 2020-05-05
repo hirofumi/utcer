@@ -1,4 +1,4 @@
-package pqutc
+package utcpgx
 
 import (
 	"testing"
@@ -8,5 +8,5 @@ import (
 )
 
 func TestPostgresSuite(t *testing.T) {
-	suite.Run(t, &test.PostgresSuite{DriverName: "pqutc"})
+	suite.Run(t, &test.PostgresSuite{DriverName: "utcpgx"})
 }

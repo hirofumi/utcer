@@ -23,11 +23,11 @@ with `Value.UTC()` when its type is `time.Time`.
 import (
 	"database/sql"
 
-	_ "github.com/hirofumi/utcer/pgxutc"
+	_ "github.com/hirofumi/utcer/utcpgx"
 )
 
 func open(dsn string) (*sql.DB, error){
-	return sql.Open("pgxutc", dsn)
+	return sql.Open("utcpgx", dsn)
 }
 ```
 
@@ -37,10 +37,10 @@ func open(dsn string) (*sql.DB, error){
 import (
 	"database/sql"
 
-	_ "github.com/hirofumi/utcer/pqutc"
+	_ "github.com/hirofumi/utcer/utcpq"
 )
 
 func open(dsn string) (*sql.DB, error){
-	return sql.Open("pqutc", dsn)
+	return sql.Open("utcpq", dsn)
 }
 ```
