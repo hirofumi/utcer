@@ -5,7 +5,7 @@ go 1.14
 require (
 	github.com/golang/mock v1.4.3
 	github.com/jackc/pgx/v4 v4.6.0
-	github.com/lib/pq v1.5.2
+	github.com/lib/pq v1.6.0
 	github.com/stretchr/testify v1.6.0
 	golang.org/x/tools v0.0.0-20200505023115-26f46d2f7ef8 // indirect
 )
